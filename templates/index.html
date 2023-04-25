@@ -21,10 +21,12 @@
         <button type="submit">Generate QR</button>
     </form>
 
+    {% if data %}
     <div class="generated">
         <img src="{{data}}" alt="">
         <p>Here is the QR code generated for you</p>
     </div>
+    {% endif %}
 </body>
 </html>
 
